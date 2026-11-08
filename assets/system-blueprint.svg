@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="270" viewBox="0 0 1100 270" role="img" aria-labelledby="t d">
+<title id="t">Engineering system blueprint</title>
+<desc id="d">A four-layer system architecture diagram connecting interface, application, data and infrastructure.</desc>
+<defs>
+  <pattern id="g" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#293640" stroke-width=".7"/></pattern>
+  <style>
+    .m{font-family:'Courier New',monospace;letter-spacing:1px}
+    .h{fill:#e9edf0;font-family:Arial,sans-serif;font-weight:700}
+    .s{fill:#8a98a4}
+    .a{fill:#d5a653}
+    .wire{stroke:#71808c;stroke-width:1.2;fill:none}
+    .flow{stroke:#d5a653;stroke-width:1.5;fill:none;stroke-dasharray:5 5;animation:dash 12s linear infinite}
+    @keyframes dash{to{stroke-dashoffset:-100}}
+    @media(prefers-reduced-motion:reduce){.flow{animation:none}}
+  </style>
+</defs>
+<rect width="1100" height="270" rx="4" fill="#0b0f13"/>
+<rect width="1100" height="270" fill="url(#g)"/>
+<text x="34" y="32" class="m a" font-size="11">SYSTEM BLUEPRINT / LAYER MODEL 01</text>
+<text x="1065" y="32" class="m s" font-size="10" text-anchor="end">CONCEPTUAL ARCHITECTURE</text>
+<g transform="translate(35 64)">
+  <g>
+    <rect width="220" height="130" rx="3" fill="#121a20" stroke="#687783"/>
+    <path d="M0 30h220" stroke="#34434e"/>
+    <text x="16" y="21" class="m a" font-size="10">LAYER 01</text>
+    <text x="16" y="63" class="h" font-size="19">INTERFACE</text>
+    <text x="16" y="88" class="m s" font-size="11">Web / Client / UX</text>
+    <text x="16" y="111" class="m s" font-size="9">INPUT · PRESENTATION</text>
+  </g>
+  <g transform="translate(270)">
+    <rect width="220" height="130" rx="3" fill="#121a20" stroke="#687783"/>
+    <path d="M0 30h220" stroke="#34434e"/>
+    <text x="16" y="21" class="m a" font-size="10">LAYER 02</text>
+    <text x="16" y="63" class="h" font-size="19">APPLICATION</text>
+    <text x="16" y="88" class="m s" font-size="11">Logic / APIs / Services</text>
+    <text x="16" y="111" class="m s" font-size="9">RULES · ORCHESTRATION</text>
+  </g>
+  <g transform="translate(540)">
+    <rect width="220" height="130" rx="3" fill="#121a20" stroke="#687783"/>
+    <path d="M0 30h220" stroke="#34434e"/>
+    <text x="16" y="21" class="m a" font-size="10">LAYER 03</text>
+    <text x="16" y="63" class="h" font-size="19">DATA</text>
+    <text x="16" y="88" class="m s" font-size="11">Storage / Queries / Events</text>
+    <text x="16" y="111" class="m s" font-size="9">STATE · INTEGRITY</text>
+  </g>
+  <g transform="translate(810)">
+    <rect width="220" height="130" rx="3" fill="#121a20" stroke="#687783"/>
+    <path d="M0 30h220" stroke="#34434e"/>
+    <text x="16" y="21" class="m a" font-size="10">LAYER 04</text>
+    <text x="16" y="63" class="h" font-size="19">INFRASTRUCTURE</text>
+    <text x="16" y="88" class="m s" font-size="11">Runtime / Network / Ops</text>
+    <text x="16" y="111" class="m s" font-size="9">DEPLOY · OBSERVE</text>
+  </g>
+  <path d="M220 65h50m-7-5 7 5-7 5M490 65h50m-7-5 7 5-7 5M760 65h50m-7-5 7 5-7 5" class="wire"/>
+  <path d="M220 65h50m270 0h50m270 0h50" class="flow"/>
+</g>
+<text x="35" y="235" class="m s" font-size="10">A SYSTEM IS MORE THAN ITS INTERFACE.</text>
+<text x="1065" y="235" class="m a" font-size="10" text-anchor="end">MODEL / 001</text>
+</svg>

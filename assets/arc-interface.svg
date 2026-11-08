@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Karimi Waithaka — Engineering Interface</title>
+<desc id="desc">A cinematic engineering console with a rotating mechanical orbital assembly, scan sweep, technical grid and personal engineering designation.</desc>
+<defs>
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+    <path d="M30 0H0V30" fill="none" stroke="#28333d" stroke-width=".7"/>
+    <circle cx="0" cy="0" r="1" fill="#52606d"/>
+  </pattern>
+  <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#d5a653" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#d5a653" stop-opacity=".75"/>
+    <stop offset="1" stop-color="#d5a653" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="aura">
+    <stop offset="0" stop-color="#d5a653" stop-opacity=".18"/>
+    <stop offset="1" stop-color="#d5a653" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="frame"><rect width="1200" height="430"/></clipPath>
+  <style>
+    .mono{font-family:'Courier New',monospace;letter-spacing:1.5px}
+    .display{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:5px}
+    .muted{fill:#81909d}.gold{fill:#d5a653}.white{fill:#edf0f2}
+    .orbitA{transform-origin:965px 211px;animation:rotate 24s linear infinite}
+    .orbitB{transform-origin:965px 211px;animation:rotate 34s linear infinite reverse}
+    .scanline{animation:sweep 8s ease-in-out infinite}
+    .pulse{animation:pulse 3s ease-in-out infinite}
+    .intro{animation:intro 1.5s ease-out both}
+    .intro2{animation:intro 2.2s ease-out both}
+    @keyframes rotate{to{transform:rotate(360deg)}}
+    @keyframes sweep{0%,100%{transform:translateY(-350px);opacity:0}12%,82%{opacity:.7}50%{transform:translateY(350px)}}
+    @keyframes pulse{50%{opacity:.35}}
+    @keyframes intro{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @media(prefers-reduced-motion:reduce){.orbitA,.orbitB,.scanline,.pulse,.intro,.intro2{animation:none}}
+  </style>
+</defs>
+<g clip-path="url(#frame)">
+  <rect width="1200" height="430" fill="#0b0f13"/>
+  <rect width="1200" height="430" fill="url(#grid)" opacity=".72"/>
+  <path d="M26 54V26H54M1146 26h28v28M26 376v28h28m1092 0h28v-28" fill="none" stroke="#697784" stroke-width="1.2"/>
+  <text x="58" y="53" class="mono muted" font-size="11">KW / ENGINEERING RECORD</text>
+  <text x="1142" y="53" class="mono gold" text-anchor="end" font-size="11">PERSONAL SYSTEMS INTERFACE / 001</text>
+  <path d="M58 73H1142" stroke="#34414c"/>
+  <g class="intro">
+    <text x="76" y="123" class="mono gold" font-size="12">FOUNDER / SOFTWARE ENGINEER</text>
+    <text x="72" y="207" class="display white" font-size="66">KARIMI</text>
+    <text x="72" y="279" class="display white" font-size="66">WAITHAKA<tspan class="gold">.</tspan></text>
+    <path d="M77 306v42" stroke="#d5a653" stroke-width="3"/>
+    <text x="96" y="323" class="mono white" font-size="14">SOFTWARE  /  SYSTEMS  /  INFRASTRUCTURE</text>
+    <text x="96" y="346" class="mono muted" font-size="11">BUILDING PRACTICAL TECHNOLOGY FROM KENYA</text>
+  </g>
+  <g>
+    <circle cx="965" cy="211" r="153" fill="url(#aura)" class="pulse"/>
+    <circle cx="965" cy="211" r="130" fill="none" stroke="#394651" stroke-dasharray="2 8"/>
+    <circle cx="965" cy="211" r="109" fill="none" stroke="#596875" stroke-dasharray="42 9 4 9"/>
+    <circle cx="965" cy="211" r="83" fill="none" stroke="#d5a653" opacity=".8"/>
+    <circle cx="965" cy="211" r="63" fill="none" stroke="#52616d"/>
+    <g class="orbitA">
+      <path d="M965 102l11 19-11 11-11-11z" fill="#d5a653"/>
+      <path d="M965 102V82" stroke="#d5a653" stroke-width="2"/>
+      <circle cx="965" cy="102" r="3" fill="#edf0f2"/>
+      <path d="M1048 211h17" stroke="#d5a653" stroke-width="2"/>
+    </g>
+    <g class="orbitB">
+      <circle cx="965" cy="128" r="4" fill="#d5a653"/>
+      <path d="M965 128l-15 15" stroke="#d5a653"/>
+      <path d="M965 81v-9" stroke="#edf0f2"/>
+    </g>
+    <circle cx="965" cy="211" r="43" fill="#121a20" stroke="#d5a653" stroke-width="1.5"/>
+    <circle cx="965" cy="211" r="31" fill="none" stroke="#64717c"/>
+    <path d="M965 183l20 28-20 28-20-28z" fill="none" stroke="#edf0f2" stroke-width="1.4"/>
+    <circle cx="965" cy="211" r="5" fill="#d5a653" class="pulse"/>
+    <path d="M965 49v28m0 268v28M803 211h28m268 0h28" stroke="#73818d"/>
+    <path d="M830 115l15 15m240 162 15 15m0-192-15 15M845 292l-15 15" stroke="#485762"/>
+    <text x="1090" y="139" class="mono muted" font-size="9" text-anchor="end">CORE / 001</text>
+    <text x="1090" y="155" class="mono gold" font-size="10" text-anchor="end">DESIGN / BUILD</text>
+    <text x="1090" y="282" class="mono muted" font-size="9" text-anchor="end">ORIGIN</text>
+    <text x="1090" y="299" class="mono white" font-size="11" text-anchor="end">KENYA / E.A.</text>
+  </g>
+  <g class="scanline" opacity=".5"><rect x="26" y="0" width="1148" height="2" fill="url(#scan)"/></g>
+  <path d="M58 379H1142" stroke="#34414c"/>
+  <text x="58" y="402" class="mono muted" font-size="10">THINK CLEARLY. BUILD PRECISELY. SHIP RELIABLY.</text>
+  <text x="1142" y="402" class="mono gold" font-size="10" text-anchor="end">SYS_READY <tspan class="pulse">_</tspan></text>
+</g>
+</svg>
