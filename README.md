@@ -32,7 +32,7 @@ I work across software development and IT infrastructure, with a particular inte
 
 I like understanding what sits beneath the interface: architecture, data, networks, infrastructure and the decisions that make software dependable.
 
-My goal is to turn useful ideas into working products — then make those products reliable enough for people to depend on.
+My goal is to turn useful ideas into working products, then make those products reliable enough for people to depend on.
 
 </td>
 <td width="42%" valign="top">
